@@ -1,20 +1,20 @@
 package CaesarCipher;
 
 public class Decrypt {
-    public static StringBuilder dencryptClass(String message, int shift){
+    public static StringBuilder dencryptClass(String decMessage, int decShift){
         StringBuilder dencryptedResult = new StringBuilder();
 
-        for (int i=0; i<message.length(); i++){
-            if (Character.isUpperCase(message.charAt(i)))
+        for (int i=0; i<decMessage.length(); i++){
+            if (Character.isUpperCase(decMessage.charAt(i)))
             {
-                char character = (char)(((int)message.charAt(i) +
-                        shift - 65) % 26 + 65);
+                char character = (char)(((int)decMessage.charAt(i) +
+                        decShift - 65) % 26 + 65);
                 dencryptedResult.append(character);
             }
             else
             {
-                char character = (char)(((int)message.charAt(i) +
-                        shift - 97) % 26 + 97);
+                char character = (char)(((int)decMessage.charAt(i) +
+                        decShift - 97) % 26 + 97);
                 dencryptedResult.append(character);
             }
 
