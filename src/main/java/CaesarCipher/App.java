@@ -6,7 +6,7 @@ package CaesarCipher;
 import java.util.Scanner;
 
 import static CaesarCipher.Encrypt.encryptClass;
-import static CaesarCipher.Decrypt.dencryptClass;sud
+import static CaesarCipher.Decrypt.dencryptClass;
 
 public class App {
 
@@ -18,14 +18,17 @@ public class App {
 
         System.out.println("Enter Key");
         int shift = myScanner.nextInt();
+        myScanner.nextLine();
 
         System.out.println(encryptClass(message, shift));
 
-        System.out.println("Enter Encrypted");
+        System.out.println("Enter encrypted message");
         String decMessage = myScanner.nextLine();
 
-        System.out.println("Enter Key");
+        System.out.println("Enter key used to decrypt");
         int decShift = myScanner.nextInt();
+        myScanner.nextLine();
+
 
         System.out.println(dencryptClass(decMessage, decShift));
     }
