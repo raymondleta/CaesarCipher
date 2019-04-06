@@ -4,6 +4,12 @@ public class Decrypt {
     public static StringBuilder dencryptClass(String decMessage, int decShift){
         StringBuilder dencryptedResult = new StringBuilder();
 
+        if(decShift>26){
+            decShift = decShift%26;
+        }else if (decShift <0 ){
+            decShift = (decShift%26)+26;
+        }
+
         for (int i=0; i<decMessage.length(); i++){
             if (Character.isUpperCase(decMessage.charAt(i)))
             {
