@@ -4,7 +4,7 @@ public class Encrypt {
     public static StringBuilder encryptClass(String message, int shift){
         StringBuilder encryptedResult = new StringBuilder();
 
-//        for (int i=0; i<message.length(); i++){
+        for (int i=0; i<message.length(); i++){
 //            if (Character.isUpperCase(message.charAt(i)))
 //            {
 //                char character = (char)(((int)message.charAt(i) +
