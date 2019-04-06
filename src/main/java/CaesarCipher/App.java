@@ -5,6 +5,8 @@ package CaesarCipher;
 
 import java.util.Scanner;
 
+import static CaesarCipher.Encrypt.encryptClass;
+
 public class App {
 
 
@@ -13,12 +15,10 @@ public class App {
         System.out.println("Enter Message");
         String message = myScanner.nextLine();
 
-        System.out.println(message);
+        System.out.println("Enter Key");
+        int shift = myScanner.nextInt();
 
-        System.out.println(new App().getGreeting());
+        System.out.println(encryptClass(message, shift));
     }
-    public String getGreeting() {
 
-        return "Hello world.";
-    }
 }
