@@ -24,10 +24,10 @@ public class App {
         System.out.println("Enter Encrypted");
         String decMessage = myScanner.nextLine();
 
-//        System.out.println("Enter Key");
-//        int decShift = myScanner.nextInt();
-//
-//        System.out.println(dencryptClass(decMessage, decShift));
+        System.out.println("Enter Key");
+        int decShift = myScanner.nextInt();
+
+        System.out.println(dencryptClass(decMessage, decShift));
     }
 
 }
