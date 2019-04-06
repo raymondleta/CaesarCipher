@@ -13,6 +13,23 @@ public class App {
 
     public static void main(String[] args) {
         Scanner myScanner = new Scanner(System.in);
+
+        System.out.println("╔═══╗░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░\n" +
+                "║╔═╗║░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░\n" +
+                "║║░╚╝╔══╗╔══╗╔══╗╔══╗╔═╗░░░░░░░░░░░░░░░░\n" +
+                "║║░╔╗║╔╗║║║═╣║══╣║╔╗║║╔╝░░░░░░░░░░░░░░░░\n" +
+                "║╚═╝║║╔╗║║║═╣╠══║║╔╗║║║░░░░░░░░░░░░░░░░░\n" +
+                "╚═══╝╚╝╚╝╚══╝╚══╝╚╝╚╝╚╝░░░░░░░░░░░░░░░░░\n" +
+                "╔═══╗░░░░░░╔╗░░░░░░░░░░░░░░░░░░░░░░░░░░░\n" +
+                "║╔═╗║░░░░░░║║░░░░░░░░░░░░░░░░░░░░░░░░░░░\n" +
+                "║║░╚╝╔╗╔══╗║╚═╗╔══╦═╗░░░░░░░░░░░░░░░░░░░\n" +
+                "║║░╔╗╠╣║╔╗║║╔╗║║║═╣╔╝░░░░░░░░░░░░░░░░░░░\n" +
+                "║╚═╝║║║║╚╝║║║║║║║═╣║░░░░░░░░░░░░░░░░░░░░\n" +
+                "╚═══╝╚╝║╔═╝╚╝╚╝╚══╩╝░░░░░░░░░░░░░░░░░░░░\n" +
+                "░░░░░░░║║░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░\n" +
+                "░░░░░░░╚╝░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░\n");
+
+        System.out.println("============================");
         System.out.println("Enter Message");
         String message = myScanner.nextLine();
 
@@ -21,6 +38,8 @@ public class App {
         myScanner.nextLine();
 
         System.out.println(encryptClass(message, shift));
+
+        System.out.println("============================");
 
         System.out.println("Enter encrypted message");
         String decMessage = myScanner.nextLine();
