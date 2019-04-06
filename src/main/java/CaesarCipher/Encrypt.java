@@ -5,12 +5,12 @@ public class Encrypt {
         StringBuilder encryptedResult = new StringBuilder();
 
         for (int i=0; i<message.length(); i++){
-//            if (Character.isUpperCase(message.charAt(i)))
-//            {
-//                char character = (char)(((int)message.charAt(i) +
-//                        shift - 65) % 26 + 65);
-//                encryptedResult.append(character);
-//            }
+            if (Character.isUpperCase(message.charAt(i)))
+            {
+                char character = (char)(((int)message.charAt(i) +
+                        shift - 65) % 26 + 65);
+                encryptedResult.append(character);
+            }
 //            else
 //            {
 //                char character = (char)(((int)message.charAt(i) +
