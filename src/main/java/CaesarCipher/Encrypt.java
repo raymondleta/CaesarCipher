@@ -11,15 +11,15 @@ public class Encrypt {
                         shift - 65) % 26 + 65);
                 encryptedResult.append(character);
             }
-//            else
-//            {
-//                char character = (char)(((int)message.charAt(i) +
-//                        shift - 97) % 26 + 97);
-//                encryptedResult.append(character);
-//            }
-//
-//        }
-//        return encryptedResult;
+            else
+            {
+                char character = (char)(((int)message.charAt(i) +
+                        shift - 97) % 26 + 97);
+                encryptedResult.append(character);
+            }
+
+        }
+        return encryptedResult;
     }
 
 }
