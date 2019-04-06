@@ -14,13 +14,13 @@ public class Decrypt {
             if (Character.isUpperCase(decMessage.charAt(i)))
             {
                 char character = (char)(((int)decMessage.charAt(i) -
-                        decShift - 65) % 26 + 65);
+                        decShift - 65) % 32 + 65);
                 dencryptedResult.append(character);
             }
             else
             {
                 char character = (char)(((int)decMessage.charAt(i) -
-                        decShift - 97) % 26 + 97);
+                        decShift - 97) % 32 + 97);
                 dencryptedResult.append(character);
             }
 

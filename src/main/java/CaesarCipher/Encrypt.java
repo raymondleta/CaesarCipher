@@ -14,13 +14,13 @@ public class Encrypt {
             if (Character.isUpperCase(message.charAt(i)))
             {
                 char character = (char)(((int)message.charAt(i) +
-                        shift - 65) % 26 + 65);
+                        shift - 65) % 32 + 65);
                 encryptedResult.append(character);
             }
             else
             {
                 char character = (char)(((int)message.charAt(i) +
-                        shift - 97) % 26 + 97);
+                        shift - 97) % 32 + 97);
                 encryptedResult.append(character);
             }
 
