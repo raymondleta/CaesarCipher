@@ -33,3 +33,7 @@ Then run 'git clone https://github.com/raymondleta/CaesarCipher' on your termina
 
 ### Support or questions
 For any questions feel free to contact me through gitongaraymondd@gmail.com
+
+## License 
+MIT 2019
+Raymond Gitonga
