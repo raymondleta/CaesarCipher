@@ -37,7 +37,7 @@ public class App {
         int shift = myScanner.nextInt();
         myScanner.nextLine();
 
-        System.out.println("Encrypted text is : "+ encryptClass(message, shift));
+        System.out.println("Encrypted text is : " + encryptClass(message, shift));
 
         System.out.println("============================");
 
@@ -64,6 +64,7 @@ public class App {
                 "░╚╗╔╝░║╔╗║║║║║░░░░░░░░\n" +
                 "░░║║░░║╚╝║║╚╝║░░░░░░░░\n" +
                 "░░╚╝░░╚══╝╚══╝░░░░░░░░\n");
+
     }
 
 }
